@@ -5,12 +5,8 @@
     background-color: #fdfbfb;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-}
-
-.sidebarImage {
-    width: 100%;
-    margin-top: 15px;
 }
 
 .sidebarItem {
@@ -33,6 +29,11 @@
     text-align: center;
 }
 
+.sidebarItem > img {
+    margin-top: 15px;
+    width: 80%;
+}
+
 .sidebarItem > p {
     padding: 30px;
 }
@@ -44,4 +45,21 @@
 
 .sidebarListItem {
     display: inline-block;
+    width: 50%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.sidebarSocial {
+    margin-top: 15px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebarIcon {
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
 }

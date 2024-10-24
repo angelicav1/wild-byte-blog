@@ -4,15 +4,16 @@ export default function SideBar() {
   return (
     <div className='sidebar'>
       <div className='sidebarItem'>
-        <span className='sidebarTitle'>ABOUT ME</span>
-        <img className="sidebarImage"
-          src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/148/361/original/logo.png?1729739839'
+        <span className='sidebarTitle'>ABOUT ME </span>
+        <img
+          className='sidebarImage'
+          src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/148/422/original/logo_copy_Small.jpeg?1729790788'
           alt='About Wild Byte'
         />
         <p>
           Wild Byte is an educational project that utilizes technology such as
-          full-stack web development, historical records, and creativity to
-          highlight stories of the natural world.
+          full-stack web development, historical record, and creativity to
+          highlight stories of the natural world. It is our goal to help you get to know our non-human counterparts and your place in nature.
         </p>
       </div>
       <div className='sidebarItem'>
@@ -27,15 +28,13 @@ export default function SideBar() {
           <li className='sidebarListItem'>Oceania</li>
         </ul>
       </div>
-      <div className='sidebarItem'>
-        <span className='sidebarTitle'>FOLLOW US</span>
-        <div className='sidebarSocial'>
-          <i className='sidebarIcon fa-brands fa-square-instagram'></i>
-          <i className='sidebarIcon fa-brands fa-facebook'></i>
-          <i className='sidebarIcon fa-brands fa-tiktok'></i>
-          <i className='sidebarIcon fa-brands fa-x-twitter'></i>
-        </div>
+      <div className='sidebarItem'>FOLLOW US</div>
+      <div className='sidebarSocial'>
+        <i className='sidebarIcon fa-brands fa-square-instagram'></i>
+        <i className='sidebarIcon fa-brands fa-facebook'></i>
+        <i className='sidebarIcon fa-brands fa-tiktok'></i>
+        <i className='sidebarIcon fa-brands fa-x-twitter'></i>
       </div>
-      </div>
+    </div>
   );
 }
