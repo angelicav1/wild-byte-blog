@@ -34,7 +34,7 @@ export default function TopBar() {
               </Route>
             </li>
             <li className='topListItem'>
-              {user && "LOGOUT"}
+              {user && 'LOGOUT'}
               <Route className='route' to='/'>
                 LOGOUT
               </Route>
@@ -42,22 +42,27 @@ export default function TopBar() {
           </ul>
         </div>
         <div className='topRight'>
-          {
-            user ? (
+          {user ? (
+            <img
+              className='topImage'
+              src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/232/original/Wordpress_Transparent.png?1723244265'
+              alt=''
+            />
+          ) : (
+            <ul className='topList'>
+              <li className='topListItem'>
+                <Route className='route' to='/login'>
+                  LOGIN
+                </Route>
+              </li>
+              <li className='topLlistItem'>
+                <Route className='route' to='/register'>
+                  REGISTER
+                </Route>
+              </li>
+            </ul>
+          )}
 
-              <img
-            className='topImage'
-            src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/232/original/Wordpress_Transparent.png?1723244265'
-            alt=''
-          />
-            ) : (
-              <ul className="topList">
-              <Route className="route" to="/login">LOGIN</Route>
-              <Route className="route" to="/register">REGISTER</Route>
-              </ul>
-            )
-          }
-          
           <i className='topSearchIcon fa-solid fa-magnifying-glass'></i>
         </div>
       </div>
