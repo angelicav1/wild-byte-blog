@@ -1,4 +1,4 @@
-import TopBar from './components/topbar/TopBar';
+import TopBar from "./components/topbar/TopBar";
 import Write from './pages/write/Write';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
@@ -10,8 +10,11 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 export default function App() {
   const user = true;
   return (
+    
     <BrowserRouter>
-      <Topbar />
+      <div>
+        <TopBar />
+      </div>
       <Routes>
         <Route path='/' exact element={<Home></Home>}></Route>
         <Route
