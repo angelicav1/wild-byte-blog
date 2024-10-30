@@ -12,9 +12,9 @@ export default function App() {
   return (
     
     <BrowserRouter>
-      <div>
+      <>
         <TopBar />
-      </div>
+      </>
       <Routes>
         <Route path='/' exact element={<Home></Home>}></Route>
         <Route
