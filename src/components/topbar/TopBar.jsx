@@ -14,28 +14,28 @@ export default function TopBar() {
         <div className='topCenter'>
           <ul className='topList'>
             <li className='topListItem'>
-              <Route className='route' to='/'>
+              <Route className='route' to='/home'>
                 HOME
               </Route>
             </li>
             <li className='topListItem'>
-              <Route className='route' to='/'>
+              <Route className='route' to='/about'>
                 ABOUT
               </Route>
             </li>
             <li className='topListItem'>
-              <Route className='route' to='/'>
+              <Route className='route' to='/contact'>
                 CONTACT
               </Route>
             </li>
             <li className='topListItem'>
-              <Route className='route' to='/'>
+              <Route className='route' to='/write'>
                 WRITE
               </Route>
             </li>
             <li className='topListItem'>
               {user && 'LOGOUT'}
-              <Route className='route' to='/'>
+              <Route className='route' to='/login'>
                 LOGOUT
               </Route>
             </li>
